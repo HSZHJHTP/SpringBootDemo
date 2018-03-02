@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ynet.entity.People",
+      "name": "people",
+      "type": "com.ynet.entity.People"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ynet.entity.People",
+      "name": "people.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ynet.entity.People",
+      "name": "people.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

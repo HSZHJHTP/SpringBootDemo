@@ -1,0 +1,28 @@
+##修改端口号
+##设置项目名
+#server:
+#  port: 8082
+#  context-path: /springBoot
+#  
+##整合mybatis框架
+##加载mybatis配置文件  
+#mybatis:
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  config-location:  classpath:mapper/config/sqlMapConfig.xml
+#  #定义别名，指定实体类所在文件夹
+#  type-aliases-package: com.ynet.entity
+#
+##数据源
+#spring:
+#  datasource: 
+#    url: jdbc:mysql://localhost:3306/test1?characterEncoding=UTF-8
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: 123
+#
+#  #整合redis单机版，使用redis作为缓存
+#  redis:
+#    host: 127.0.0.1
+#    port: 6379
+#    #整合redis集群,要将之前跟整合redis单机版有关的内容全都屏蔽掉
+#    cluster.nodes: 127.0.0.1:7001,127.0.0.1:7002,127.0.0.1:7003,127.0.0.4:7001,127.0.0.1:7005
