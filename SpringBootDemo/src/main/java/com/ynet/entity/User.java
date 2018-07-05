@@ -8,18 +8,23 @@ import java.io.Serializable;
  * @Description
  */
 public class User implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	private Long id;
+	private String password;
 	private String name;
 	private String sex;
 	private Integer age;
+	private String perms;
 
 	public User() {
 
 	}
 
-	public User(Long id, String name, String sex, Integer age) {
+	public User(Long id, String password, String name, String sex, Integer age) {
 		super();
 		this.id = id;
+		this.password = password;
 		this.name = name;
 		this.sex = sex;
 		this.age = age;
@@ -31,6 +36,14 @@ public class User implements Serializable{
 
 	public void setId(Long id) {
 		this.id = id;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getName() {
@@ -57,8 +70,18 @@ public class User implements Serializable{
 		this.age = age;
 	}
 
+	public String getPerms() {
+		return perms;
+	}
+
+	public void setPerms(String perms) {
+		this.perms = perms;
+	}
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", sex=" + sex + ", age=" + age + "]";
+		return "User [id=" + id + ", password=" + password + ", name=" + name + ", sex=" + sex + ", age=" + age
+				+ ", perms=" + perms + "]";
 	}
+
 }

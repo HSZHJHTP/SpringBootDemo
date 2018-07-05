@@ -35,7 +35,7 @@ public class JsonTestController {
 	 */
 	@RequestMapping("/user")
 	public User showUser() {
-		User user = new User(1L, "张三", "男", 24);
+		User user = new User(1L, "123", "张三", "男", 24);
 		return user;
 	}
 
@@ -48,7 +48,7 @@ public class JsonTestController {
 	public Map<String, Object> showMap() {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("userName", "李四");
-		map.put("user", new User(1L, "张三", "男", 24));
+		map.put("user", new User(1L, "123", "张三", "男", 24));
 		return map;
 
 	}
@@ -68,7 +68,7 @@ public class JsonTestController {
 			} else {
 				sex = "女";
 			}
-			User user = new User(i, "张" + i, sex, (int) (20L + i));
+			User user = new User(i, "123", "张" + i, sex, (int) (20L + i));
 			list.add(user);
 		}
 		return list;

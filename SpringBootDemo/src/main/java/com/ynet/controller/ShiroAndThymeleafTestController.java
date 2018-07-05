@@ -1,7 +1,6 @@
 package com.ynet.controller;
 
 
-import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -14,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * @author hansz
- * @version 2018年2月11日 下午4:14:46
- * @Description TODO 跳转ftl页面
+ * @version 2018年7月5日 下午9:25:08
+ * @Description TODO shiro的使用和thymeleaf页面模板引擎的使用
  */
 @Controller
 public class ShiroAndThymeleafTestController {
@@ -39,6 +38,11 @@ public class ShiroAndThymeleafTestController {
 	@RequestMapping("/toLogin")
 	public String toLogin() {
 		return "user/login";
+	}
+	
+	@RequestMapping("/noAuth")
+	public String noAuth() {
+		return "user/noAuth";
 	}
 
 	@RequestMapping("/login")

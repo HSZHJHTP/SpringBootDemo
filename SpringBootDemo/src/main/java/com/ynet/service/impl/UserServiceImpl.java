@@ -45,4 +45,14 @@ public class UserServiceImpl implements UserService {
 		return jedisCluster.get("username");
 	}
 
+	@Override
+	public User findByName(String name) {
+		return UserMapper.findByName(name);
+	}
+
+	@Override
+	public User findById(Long id) {
+		return UserMapper.findById(id);
+	}
+
 }

@@ -13,8 +13,12 @@ public interface UserService {
 
 	public List<User> findAll();
 	
+	public User findByName(String name);
+	
 	public List<User> findAllAndRedisCache();
 	
 	public String findRedisCluster();
+	
+	public User findById(Long id);
 
 }

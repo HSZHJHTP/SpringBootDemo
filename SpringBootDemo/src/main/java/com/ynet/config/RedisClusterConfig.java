@@ -17,6 +17,7 @@ import redis.clients.jedis.JedisCluster;
  */
 @Configuration // 这个标签类似于applicationContext.xml，将RedisClusterConfig变成一个配置文件
 public class RedisClusterConfig {
+	
 	@Value("${spring.redis.cluster.nodes}") // 注入集群节点信息
 	private String clusterNodes;
 

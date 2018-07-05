@@ -20,5 +20,9 @@ public interface UserMapper {
 	* @Description 查询所有用户
 	*/
 	public List<User> findAll();
+	
+	public User findByName(String name);
+	
+	public User findById(Long id);
 
 }
